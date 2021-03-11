@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shippori Mincho B1', serif;
+}
+/*Header -menu*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    transition: 0.6s;
+    padding:40px 100px;
+    z-index: 100000;
+}
+.stiky{
+    background:#f1f1f1  !important; 
+    padding:10px 100px;
+
+}
+header .Logo{
+    position: relative;
+    font-weight: bolder;
+    color:#FFF;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing:2px;
+}
+.stiky .Logo{
+    position: relative;
+    font-weight: bolder;
+    color: #010101;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing:2px;
+}
+header .Logo:hover{
+    color: #FFFFFF99;
+}
+.stiky .Logo:hover{
+    color: #01010199;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 1vh;
+    text-decoration: none;
+    color: #ffffff;
+    font-size:20px;
+    letter-spacing:1px;
+    font-weight: bold;
+    transition:0.6s;
+}
+.stiky ul li a{
+    position: relative;
+    margin: auto 1vh;
+    text-decoration: none;
+    font-size:20px;
+    letter-spacing:1px;
+    font-weight: bold;
+    color: #010101;
+
+    transition:0.6s;
+}
+header ul li a:hover{
+    color:#FFFFFF99;
+}
+.stiky ul li a:hover{
+    color:#00000099;
+}
+/*Parallax_banner_gif*/
+#parallax_banner{
+    background-image: url('../images/ezgif.com-gif-maker.gif');
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+#opacity_banner{
+    width:100%;
+    height:100vh;
+    background-color: #00000089;
+}
+/*Sobre nós*/
+#titulo{
+    margin: 10vh 0;
+    border-bottom: 1px solid #010101;
+    padding-bottom: 2vh;
+}
+#section_sobre{
+    background-color: #dedede99;
+    padding-bottom: 2vh;
+}
+#section_sobre .container{
+    border-bottom: 1px solid #010101;
+    padding-bottom: 5vh;
+    margin-bottom:5vh;
+}
+#section_sobre .container .row .col-md-6{
+    font-size:1rem;
+    margin-bottom:2vh;
+}
+#section_sobre .container .row .col-md-6 a{
+    color: #010101;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding:.5vh;
+    border: 1px solid #010101;
+    border-radius:50px;
+    box-shadow: 10px 10px 10px black;
+}
+#section_sobre .container .row .col-md-6 a:hover{
+    border: 1px solid #010101;
+    color: #010101;
+    box-shadow: 5px 5px 5px black;
+    transition: 0.2s;
+}
+/*Nossa Equipe*/
+#section_equipe .card{
+    padding:20px;
+    border: 1px solid #010101;
+    border-radius:20px;
+    margin-top:2vh;
+    box-shadow:5px 5px 5px;
+
+}
+.card-social{
+    display: flex;
+    justify-content:space-evenly; 
+}
+.card-social a{
+    color:#010101;
+    font-size:2.5rem;
+
+}
+.card-text{
+    font-size:1.3rem;
+}
+.card-social a:hover{
+    color:#01010199;
+}
+#section_equipe{
+    padding-bottom: 2vh;
+
+} 
+#section_equipe .container{
+    border-bottom: 1px solid #010101;
+    padding-bottom: 10vh;
+    margin-bottom:5vh;
+}
+/*Especialidades*/
+#section_especialidades{
+    background-color:#dedede99;
+    padding-bottom:10vh;
+}
+#section_especialidades .container{
+    border-bottom: 1px solid #010101;
+    padding-bottom: 5vh;
+    margin-bottom:5vh;    
+}
+#section_especialidades .card{
+    margin: 2vh auto;
+    border: 1px solid #010101;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow:5px 5px 5px;
+}
+#section_especialidades .card .card-title{margin: 2vh;}
+
+#section_especialidades .card i{font-size:5rem;text-align: center;}
+
+/*Contato*/
+#contato_banner{
+    width:100%;
+    height:70vh;
+    background-image: url(../images/courtroom-898931_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+#contato_opacidade{
+    width:100%;
+    height:70vh;
+    background: #01010199;
+    padding-top:50px;
+}
+@media (max-width:700){
+    #contato_banner{
+        width:100%;
+        height:100vh;
+        background-image: url(../images/courtroom-898931_1920.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        background-attachment: fixed;
+    }
+    #contato_opacidade{
+        width:100%;
+        height:100vh;
+        background: #01010199;
+        padding-top:50px;
+    }
+    #contato_banner form{
+        width:100%;
+        max-width: 500px;
+        background: none;
+        margin: 5vh auto;
+        padding:30px;
+    }
+}
+#contato_banner form{
+    width:100%;
+    max-width: 500px;
+    background: #01010199;
+    margin: 5vh auto;
+    padding:30px;
+}
+#contato_banner form label{
+    width:100%;
+    color: #FFF;
+}
+#contato_banner form input,textarea{width: 100%; background:none; margin: 2vh 0;}
+textarea{height: 150px; margin: 5vh 0;}
+#contato_banner button{
+    background-color: #dfdfdf;
+    width: 100%;
+    font-size:25px;
+    color: #010101;
+    padding:10px;
+    margin-top:5vh;
+}
+#contato_banner button:hover{
+    background-color: #dfdfdf99;
+    transition:0.5s;
+}
+/*Footer*/
+#redes_socias_empresa{
+    width:100%;
+    background-color: #dfdfdf99;
+    padding:50px;
+    color: #010101;
+}
+#redes_socias_empresa h4{
+    margin:2vh 0;
+}
+#redes_socias_empresa a{
+    color: #010101;
+    margin:1vh;
+    font-size:2rem;
+}
+#redes_sociais_desenvolvedor{
+    width:100%;
+    background-color: #010101;
+    padding:50px;
+    color: #F1f1f1;
+}
+#redes_sociais_desenvolvedor h4{
+    margin:2vh 0;
+}
+#redes_sociais_desenvolvedor a{
+    color: #F1F1F1;
+    margin:1vh;
+    font-size:2rem;
+}
+/*Animações*/
+[data-animacion]{
+    opacity: 0;
+    transition:.5s;
+}
+[data-animacion="center"]{
+    transform: translate3d(0px, 50px, 0px);
+}
+[data-animacion="right"]{
+    transform: translate3d(50px, 0px, 0px);
+}
+[data-animacion="left"]{
+    transform: translate3d(-50px, 0px, 0px);
+}
+[data-animacion].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
