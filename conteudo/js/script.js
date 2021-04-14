@@ -1,36 +1,11 @@
-const debounce = function(func,wait,immediate) {
-    let timeout;
-    return function(...args) {
-        const context = this;
-        const later = function(){
-            timeout = null;
-            if(!immediate) func.apply(context,args);
-        };
-        const callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later,wait);
-        if(callNow) func.apply(context,args);
-    };
-};
-window.addEventListener("scroll",debounce(function(){
-    var header  =   document.querySelector("header");
-    header.classList.toggle("stiky",window.scrollY),200
-}))
-const target = document.querySelectorAll('[data-animacion]');
-const animationclass = 'animate';
-function animateCard(){
-     const windowY = window.pageYOffset + ((window.innerHeight * 3) / 4);
-    target.forEach(function(e ){
-        if((windowY) > e.offsetTop){
-            e.classList.add(animationclass);
-        }else{
-            e.classList.remove(animationclass);
-        }
-    })    
+/*Função do efeito maquina de escrever*/
+function typewriter(element){
+    const textArray = element.innerHTML.split('');
+    element.innerHTML = '';
+    textArray.forEach((letra, i) => {
+        setTimeout(() => element.innerHTML += letra, 150 * i);
+    });
 }
-animateCard();
-if( target.length ){
-window.addEventListener('scroll', debounce(function(){
-    animateCard();
-},200));
-}
+const title = document.querySelector('header #opacity_video h1');
+typewriter(title);
+/*Maquina de escrever acaba aqui */

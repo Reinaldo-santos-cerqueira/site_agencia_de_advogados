@@ -4,298 +4,119 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Shippori Mincho B1', serif;
+    
 }
-/*Header -menu*/
+html,body{
+    position: relative;
+}
 header{
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-    transition: 0.6s;
-    padding:40px 100px;
-    z-index: 100000;
+    height: 100vh;
+    overflow:hidden;
+    align-items: center;
+    vertical-align: middle
 }
-.stiky{
-    background:#f1f1f1  !important; 
-    padding:10px 100px;
-
-}
-header .Logo{
-    position: relative;
-    font-weight: bolder;
-    color:#FFF;
-    text-decoration: none;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing:2px;
-}
-.stiky .Logo{
-    position: relative;
-    font-weight: bolder;
-    color: #010101;
-    text-decoration: none;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing:2px;
-}
-header .Logo:hover{
-    color: #FFFFFF99;
-}
-.stiky .Logo:hover{
-    color: #01010199;
-}
-
-header ul {
-    position: relative;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    list-style: none;
-}
-header ul li a{
-    position: relative;
-    margin: 0 1vh;
-    text-decoration: none;
-    color: #ffffff;
-    font-size:20px;
-    letter-spacing:1px;
-    font-weight: bold;
-    transition:0.6s;
-}
-.stiky ul li a{
-    position: relative;
-    margin: auto 1vh;
-    text-decoration: none;
-    font-size:20px;
-    letter-spacing:1px;
-    font-weight: bold;
-    color: #010101;
-
-    transition:0.6s;
-}
-header ul li a:hover{
-    color:#FFFFFF99;
-}
-.stiky ul li a:hover{
-    color:#00000099;
-}
-/*Parallax_banner_gif*/
-#parallax_banner{
-    background-image: url('../images/ezgif.com-gif-maker.gif');
-    width:100%;
-    height:100vh;
+#parallax{
+    background-image: url(../images/pexels-august-de-richelieu-4427431.jpg);
+    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-#opacity_banner{
-    width:100%;
-    height:100vh;
-    background-color: #00000089;
-}
-/*Sobre nós*/
-#titulo{
-    margin: 10vh 0;
-    border-bottom: 1px solid #010101;
-    padding-bottom: 2vh;
-}
-#section_sobre{
-    background-color: #dedede99;
-    padding-bottom: 2vh;
-}
-#section_sobre .container{
-    border-bottom: 1px solid #010101;
-    padding-bottom: 5vh;
-    margin-bottom:5vh;
-}
-#section_sobre .container .row .col-md-6{
-    font-size:1rem;
-    margin-bottom:2vh;
-}
-#section_sobre .container .row .col-md-6 a{
-    color: #010101;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.2rem;
-    padding:.5vh;
-    border: 1px solid #010101;
-    border-radius:50px;
-    box-shadow: 10px 10px 10px black;
-}
-#section_sobre .container .row .col-md-6 a:hover{
-    border: 1px solid #010101;
-    color: #010101;
-    box-shadow: 5px 5px 5px black;
-    transition: 0.2s;
-}
-/*Nossa Equipe*/
-#section_equipe .card{
-    padding:20px;
-    border: 1px solid #010101;
-    border-radius:20px;
-    margin-top:2vh;
-    box-shadow:5px 5px 5px;
-
-}
-.card-social{
-    display: flex;
-    justify-content:space-evenly; 
-}
-.card-social a{
-    color:#010101;
-    font-size:2.5rem;
-
-}
-.card-text{
-    font-size:1.3rem;
-}
-.card-social a:hover{
-    color:#01010199;
-}
-#section_equipe{
-    padding-bottom: 2vh;
-
-} 
-#section_equipe .container{
-    border-bottom: 1px solid #010101;
-    padding-bottom: 10vh;
-    margin-bottom:5vh;
-}
-/*Especialidades*/
-#section_especialidades{
-    background-color:#dedede99;
-    padding-bottom:10vh;
-}
-#section_especialidades .container{
-    border-bottom: 1px solid #010101;
-    padding-bottom: 5vh;
-    margin-bottom:5vh;    
-}
-#section_especialidades .card{
-    margin: 2vh auto;
-    border: 1px solid #010101;
-    padding: 15px;
-    border-radius: 20px;
-    background-color: #ffffff;
-    box-shadow:5px 5px 5px;
-}
-#section_especialidades .card .card-title{margin: 2vh;}
-
-#section_especialidades .card i{font-size:5rem;text-align: center;}
-
-/*Contato*/
-#contato_banner{
-    width:100%;
-    height:70vh;
-    background-image: url(../images/courtroom-898931_1920.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    background-attachment: fixed;
-}
-#contato_opacidade{
-    width:100%;
-    height:70vh;
-    background: #01010199;
-    padding-top:50px;
-}
-@media (max-width:700){
-    #contato_banner{
-        width:100%;
-        height:100vh;
-        background-image: url(../images/courtroom-898931_1920.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size:cover;
-        background-attachment: fixed;
-    }
-    #contato_opacidade{
-        width:100%;
-        height:100vh;
-        background: #01010199;
-        padding-top:50px;
-    }
-    #contato_banner form{
-        width:100%;
-        max-width: 500px;
-        background: none;
-        margin: 5vh auto;
-        padding:30px;
-    }
-}
-#contato_banner form{
-    width:100%;
-    max-width: 500px;
-    background: #01010199;
-    margin: 5vh auto;
-    padding:30px;
-}
-#contato_banner form label{
-    width:100%;
-    color: #FFF;
-}
-#contato_banner form input,textarea{width: 100%; background:none; margin: 2vh 0;}
-textarea{height: 150px; margin: 5vh 0;}
-#contato_banner button{
-    background-color: #dfdfdf;
     width: 100%;
-    font-size:25px;
-    color: #010101;
-    padding:10px;
-    margin-top:5vh;
+    height: 100vh;
+    background-attachment: fixed;
 }
-#contato_banner button:hover{
-    background-color: #dfdfdf99;
-    transition:0.5s;
+#opacity_video{
+    height:100vh;
+    width: 100%;
+    background-color: #00000077;
+    text-align: center;
 }
-/*Footer*/
-#redes_socias_empresa{
-    width:100%;
-    background-color: #dfdfdf99;
-    padding:50px;
-    color: #010101;
+#titulo{
+    color:#d1cece;
+    position: relative;
+    top: 50%;
 }
-#redes_socias_empresa h4{
-    margin:2vh 0;
-}
-#redes_socias_empresa a{
-    color: #010101;
-    margin:1vh;
-    font-size:2rem;
-}
-#redes_sociais_desenvolvedor{
-    width:100%;
-    background-color: #010101;
-    padding:50px;
-    color: #F1f1f1;
-}
-#redes_sociais_desenvolvedor h4{
-    margin:2vh 0;
-}
-#redes_sociais_desenvolvedor a{
-    color: #F1F1F1;
-    margin:1vh;
-    font-size:2rem;
-}
-/*Animações*/
-[data-animacion]{
-    opacity: 0;
-    transition:.5s;
-}
-[data-animacion="center"]{
-    transform: translate3d(0px, 50px, 0px);
-}
-[data-animacion="right"]{
-    transform: translate3d(50px, 0px, 0px);
-}
-[data-animacion="left"]{
-    transform: translate3d(-50px, 0px, 0px);
-}
-[data-animacion].animate{
+#titulo::after{
+    content: '|';
+    margin-left: 5px;
     opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
+    animation: pisca 1s infinite;
+}
+/*About Us*/
+#about_us{
+    padding: 10vh;
+    background-color: lightgray;
+}
+#about_us h3{
+    border-bottom: 1px solid #010101;
+}
+#about_us h6{
+    padding: 1vh;
+}
+#about_us h6 i{padding-right: 1vh;}
+/*team section*/
+#team_section h1{
+    margin: 10vh 0;
+}
+#team_section .card{
+    padding:20px;
+    margin-bottom: 10vh;
+    border: 1px solid #010101;
+
+}
+#team_section .card h4{
+    border-bottom: none;
+    padding: 1vh 0;
+}
+#team_section .card ul{
+    border: 1px solid #01010199;
+}
+#team_section .card li{
+    border-bottom: 1px solid #01010199;
+}
+
+.card-redes-socias{
+    display: flex;
+    justify-content: space-around;
+}
+.card-redes-socias a{
+    font-size: 2.5em;
+}
+.card-redes-socias a:first-child{
+    color:#3b5998;
+}
+
+.card-redes-socias a:nth-child(2) i{
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+}
+.card-redes-socias a:last-child{
+    color:#0e76a8;
+}
+/*`Parallax section*/ 
+#parallax_main{
+    background-image: url(../images/pexels-august-de-richelieu-4427430.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+}
+#opacity_parallax{
+    height: 50vh;
+    width: 100%;
+    background-color: #00000077;
+}
+/**/
+/*animações*/
+@keyframes pisca {
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
 }
