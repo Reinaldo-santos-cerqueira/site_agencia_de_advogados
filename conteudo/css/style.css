@@ -110,7 +110,126 @@ header{
     width: 100%;
     background-color: #00000077;
 }
-/**/
+/*Parallax 2*/
+#parallax2{
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+}
+video{
+    top: 0;
+    left: 0;
+    display:block;
+    width: 100%;
+}
+#parallax2-opacity{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    background-color: #00000099;
+}
+/*Especialidades*/
+#section_especialidades{
+    background-color: lightgray;
+    padding-bottom: 10vh;
+}
+#section_especialidades h1{
+    margin: 10vh 0;
+}
+#section_especialidades .card{
+    margin: 5vh 0;
+    background-color: lightgray;
+    border: 1px solid #010101;
+    padding:5vh 0;
+}
+#section_especialidades .card .card-body{
+    text-align: center;
+}
+#section_especialidades .card .card-body i{
+    font-size:5rem;
+}
+#section_especialidades .card .card-body h4{
+    margin: 3vh 0;
+}
+/*section_contato*/
+
+#section_contato{
+    background-image: url(../images/pexels-august-de-richelieu-4427626.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+#section_contato_opacity{
+    height: 100%;
+    width: 100%;
+    padding: 100px 0;
+    background-color: #00000099;
+}
+#section_contato_opacity h1{
+    margin: 5vh 0;
+    color: #f5f5f5;
+}
+#section_contato form{
+    padding:50px;
+    margin: 5vh 0;
+    border: 1px solid #F1f1f1;
+}
+#section_contato form label,#section_contato form input,#section_contato form textarea{
+    width: 100%;
+    margin-top: 1vh;
+    color: #F1f1f1;
+}
+#section_contato form button{margin-top:2vh;padding: 5px;}
+#section_contato form label:focus,#section_contato form input:focus,#section_contato form textarea:focus,#section_contato form button:focus{
+    outline: 0;
+}
+#section_contato form button{
+    padding:10px 25px;
+    font-weight: bolder;
+    margin-left: 40%;
+}
+#section_contato form textarea{
+    height:100px;
+}
+#section_contato ul{
+    padding:50px;
+    margin: 5vh 0;
+    list-style: none;
+    margin-left: 20%;
+}
+#section_contato ul li{
+    font-size:2rem;
+    margin: 2vh ;
+}
+#section_contato li a{color:#F1f1f1;text-decoration:none;}
+#section_contato li:first-child a:hover{
+    color:#3b5998;
+}
+#section_contato li:nth-child(2) a:hover{
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#section_contato li:nth-child(3) a:hover{
+    color:#0e76a8;
+}
+#section_contato li:nth-child(4) a:hover{
+    color:#43C354;
+}
+#section_contato li:nth-child(5) a:hover{
+    color:#dc4b3e;
+}
+/*Footer*/
+#section_footer{
+    background-color: gray;
+    padding:10vh 0;
+    color: #f5f5f5;
+}
 /*animações*/
 @keyframes pisca {
     0%,100%{
